@@ -193,6 +193,10 @@ public void ListRoutes()
 {
      ReporteTodo("rptRoute.jasper");
 }
+public void ListAirports()
+{
+     ReporteTodo("rptAirport.jasper");
+}
 public void ReporteHorario(int idtrabajador)
 {
      ReporteCon1Parametro("reportehorario.jasper",idtrabajador+"");
