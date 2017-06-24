@@ -42,7 +42,6 @@ public class dlgAirportPName extends javax.swing.JDialog {
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Filtro por Nombre");
         setAutoRequestFocus(false);
-        setLocation(new java.awt.Point(350, 250));
 
         jLabel1.setText("Parámetro:");
 
@@ -78,6 +77,7 @@ public class dlgAirportPName extends javax.swing.JDialog {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnReportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReportActionPerformed

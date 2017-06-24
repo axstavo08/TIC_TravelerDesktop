@@ -39,7 +39,6 @@ public class dlgRoutesByOrigin extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Filtro por Origen");
-        setLocation(new java.awt.Point(350, 250));
 
         btnReport.setText("Reporte");
         btnReport.addActionListener(new java.awt.event.ActionListener() {
@@ -75,6 +74,7 @@ public class dlgRoutesByOrigin extends javax.swing.JDialog {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnReportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReportActionPerformed
