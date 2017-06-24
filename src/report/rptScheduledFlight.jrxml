@@ -2,7 +2,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d80805a3-ed94-4c82-83fa-20fe6774fb34">
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
-	<property name="ireport.y" value="0"/>
+	<property name="ireport.y" value="88"/>
 	<queryString language="SQL">
 		<![CDATA[SELECT v.idvuelo AS ID, 
 	a.nombre AS AEROPUERTO, 
@@ -108,7 +108,7 @@ GROUP BY r.origen, r.destino;]]>
 		</band>
 	</columnHeader>
 	<detail>
-		<band height="303">
+		<band height="34">
 			<line>
 				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="db6cd735-8a90-4851-b8c2-a47249613d52"/>
 			</line>
@@ -157,15 +157,36 @@ GROUP BY r.origen, r.destino;]]>
 		</band>
 	</detail>
 	<columnFooter>
-		<band/>
+		<band height="250">
+			<bar3DChart>
+				<chart>
+					<reportElement x="113" y="0" width="303" height="154" uuid="188eba77-13f4-4cc5-a22e-229843b57bfc"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<categorySeries>
+						<seriesExpression><![CDATA["Cantidad"]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{ORIGEN}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{CANTIDAD}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<bar3DPlot>
+					<plot/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat/>
+					</valueAxisFormat>
+				</bar3DPlot>
+			</bar3DChart>
+		</band>
 	</columnFooter>
 	<pageFooter>
 		<band height="27">
-			<textField>
-				<reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" uuid="63fb92a7-a643-4a00-80d4-6c1598eec258"/>
-				<textElement textAlignment="Right"/>
-				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
-			</textField>
 			<textField evaluationTime="Report">
 				<reportElement mode="Opaque" x="515" y="4" width="40" height="13" backcolor="#E6E6E6" uuid="43d967cd-7624-4734-afa9-37decf8f5ad9"/>
 				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
@@ -173,6 +194,11 @@ GROUP BY r.origen, r.destino;]]>
 			<textField pattern="EEEEE dd MMMMM yyyy">
 				<reportElement x="0" y="4" width="100" height="13" uuid="be84e6d0-7db4-455f-8f99-09f9a863fcfb"/>
 				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" uuid="63fb92a7-a643-4a00-80d4-6c1598eec258"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
 			</textField>
 		</band>
 	</pageFooter>
