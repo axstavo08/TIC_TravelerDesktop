@@ -184,7 +184,7 @@ public class MainMDI extends javax.swing.JFrame {
 
     private void mnuRouteRepActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuRouteRepActionPerformed
         
-        new CReporte().ListRoutes();
+        new CReporte().ListRoutes(); 
     }//GEN-LAST:event_mnuRouteRepActionPerformed
 
     private void mnuAirportRepActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuAirportRepActionPerformed
