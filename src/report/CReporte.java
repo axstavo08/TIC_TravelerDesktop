@@ -84,6 +84,10 @@ public class CReporte {
     public void listAirports() {
         buildReport("rptAirport.jasper", null);
     }
+    
+    public void listFlights() {
+        buildReport("rptScheduledFlight.jasper", null);
+    }
 
     public void lisrAirportsByName(String name) {
         buildReport("rptAirportParams.jasper", new ArrayList<>(Arrays.asList(name)));

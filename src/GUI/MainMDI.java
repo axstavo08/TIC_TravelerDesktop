@@ -56,6 +56,8 @@ public class MainMDI extends javax.swing.JFrame {
         mnusAiport = new javax.swing.JMenu();
         mnuAirportAll = new javax.swing.JMenuItem();
         mnuAirportName = new javax.swing.JMenuItem();
+        mnusFlight = new javax.swing.JMenu();
+        mnuFlightAll = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Aplicación Viajero");
@@ -182,6 +184,18 @@ public class MainMDI extends javax.swing.JFrame {
 
         mnuReports.add(mnusAiport);
 
+        mnusFlight.setText("Vuelos");
+
+        mnuFlightAll.setText("Lista Completa");
+        mnuFlightAll.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuFlightAllActionPerformed(evt);
+            }
+        });
+        mnusFlight.add(mnuFlightAll);
+
+        mnuReports.add(mnusFlight);
+
         menuBar.add(mnuReports);
 
         setJMenuBar(menuBar);
@@ -233,6 +247,10 @@ public class MainMDI extends javax.swing.JFrame {
         new dlgAirportPName(new javax.swing.JFrame(), true).setVisible(true);
     }//GEN-LAST:event_mnuAirportNameActionPerformed
 
+    private void mnuFlightAllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuFlightAllActionPerformed
+        new CReporte().listFlights();
+    }//GEN-LAST:event_mnuFlightAllActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -283,11 +301,13 @@ public class MainMDI extends javax.swing.JFrame {
     private javax.swing.JMenuItem mnuAirportAll;
     private javax.swing.JMenuItem mnuAirportMant;
     private javax.swing.JMenuItem mnuAirportName;
+    private javax.swing.JMenuItem mnuFlightAll;
     private javax.swing.JMenu mnuMaintenance;
     private javax.swing.JMenu mnuReports;
     private javax.swing.JMenuItem mnuRouteMant;
     private javax.swing.JMenuItem mnuiRouteAll;
     private javax.swing.JMenu mnusAiport;
+    private javax.swing.JMenu mnusFlight;
     private javax.swing.JMenu mnusRoute;
     private javax.swing.JMenuItem openMenuItem;
     private javax.swing.JMenuItem pasteMenuItem;
