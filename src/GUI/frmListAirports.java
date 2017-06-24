@@ -179,6 +179,7 @@ public class frmListAirports extends javax.swing.JInternalFrame {
 
     private void btnNewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNewActionPerformed
         new dlgAirport(new javax.swing.JFrame(), true, null).setVisible(true);
+        searcherKeyReleased(null);
     }//GEN-LAST:event_btnNewActionPerformed
 
     private void gridAirportsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_gridAirportsMouseClicked

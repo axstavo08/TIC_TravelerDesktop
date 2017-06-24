@@ -181,6 +181,7 @@ public class frmListRoutes extends javax.swing.JInternalFrame {
 
     private void btnNewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNewActionPerformed
         new dlgRoute(new javax.swing.JFrame(), true, null).setVisible(true);
+        searcherKeyReleased(null);
     }//GEN-LAST:event_btnNewActionPerformed
 
     private void gridRoutesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_gridRoutesMouseClicked
