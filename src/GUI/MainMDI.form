@@ -143,20 +143,20 @@
                 <Property name="text" type="java.lang.String" value="Aeropuerto"/>
               </Properties>
               <SubComponents>
-                <MenuItem class="javax.swing.JMenuItem" name="mnuAirportName">
+                <MenuItem class="javax.swing.JMenuItem" name="mnuAirportAll">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Lista Completa"/>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mnuAirportNameActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mnuAirportAllActionPerformed"/>
                   </Events>
                 </MenuItem>
-                <MenuItem class="javax.swing.JMenuItem" name="jMenuItem1">
+                <MenuItem class="javax.swing.JMenuItem" name="mnuAirportName">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="Lista por Nombre"/>
                   </Properties>
                   <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jMenuItem1ActionPerformed"/>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mnuAirportNameActionPerformed"/>
                   </Events>
                 </MenuItem>
               </SubComponents>

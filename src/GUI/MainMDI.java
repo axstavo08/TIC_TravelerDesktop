@@ -54,8 +54,8 @@ public class MainMDI extends javax.swing.JFrame {
         mnusRoute = new javax.swing.JMenu();
         mnuiRouteAll = new javax.swing.JMenuItem();
         mnusAiport = new javax.swing.JMenu();
+        mnuAirportAll = new javax.swing.JMenuItem();
         mnuAirportName = new javax.swing.JMenuItem();
-        jMenuItem1 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Aplicación Viajero");
@@ -164,21 +164,21 @@ public class MainMDI extends javax.swing.JFrame {
 
         mnusAiport.setText("Aeropuerto");
 
-        mnuAirportName.setText("Lista Completa");
+        mnuAirportAll.setText("Lista Completa");
+        mnuAirportAll.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuAirportAllActionPerformed(evt);
+            }
+        });
+        mnusAiport.add(mnuAirportAll);
+
+        mnuAirportName.setText("Lista por Nombre");
         mnuAirportName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mnuAirportNameActionPerformed(evt);
             }
         });
         mnusAiport.add(mnuAirportName);
-
-        jMenuItem1.setText("Lista por Nombre");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
-            }
-        });
-        mnusAiport.add(jMenuItem1);
 
         mnuReports.add(mnusAiport);
 
@@ -225,13 +225,13 @@ public class MainMDI extends javax.swing.JFrame {
         new CReporte().listRoutes();
     }//GEN-LAST:event_mnuiRouteAllActionPerformed
 
-    private void mnuAirportNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuAirportNameActionPerformed
+    private void mnuAirportAllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuAirportAllActionPerformed
         new CReporte().listAirports();
-    }//GEN-LAST:event_mnuAirportNameActionPerformed
+    }//GEN-LAST:event_mnuAirportAllActionPerformed
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        new CReporte().lisrAirportsByName("Andahuaylas");
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    private void mnuAirportNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuAirportNameActionPerformed
+        new dlgAirportPName(new javax.swing.JFrame(), true).setVisible(true);
+    }//GEN-LAST:event_mnuAirportNameActionPerformed
 
     /**
      * @param args the command line arguments
@@ -279,8 +279,8 @@ public class MainMDI extends javax.swing.JFrame {
     private javax.swing.JMenuItem exitMenuItem;
     private javax.swing.JMenu fileMenu;
     private javax.swing.JMenu helpMenu;
-    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuBar menuBar;
+    private javax.swing.JMenuItem mnuAirportAll;
     private javax.swing.JMenuItem mnuAirportMant;
     private javax.swing.JMenuItem mnuAirportName;
     private javax.swing.JMenu mnuMaintenance;

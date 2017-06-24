@@ -8,7 +8,6 @@ import java.util.Arrays;
 import net.sf.jasperreports.engine.*;
 import net.sf.jasperreports.engine.util.JRLoader;
 import net.sf.jasperreports.view.*;
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -42,9 +41,12 @@ public class CReporte {
                 }
                 Map<String, Object> parameters = (args != null) ? buildParameters(args) : null;
                 JasperPrint jasperPrint = JasperFillManager.fillReport(masterReport, parameters, cn);
+                Boolean cantPages = (jasperPrint.getPages().size() > 0) ? Boolean.TRUE : Boolean.FALSE;
                 JasperViewer jviewer = new JasperViewer(jasperPrint, false);
-                jviewer.setTitle(nameReport);
-                jviewer.setVisible(true);
+                if (cantPages) {
+                    jviewer.setTitle(nameReport);
+                    jviewer.setVisible(true);
+                }
                 cnn.close();
             } catch (JRException j) {
                 System.out.println("Mensaje de Error:" + j.getMessage());
@@ -86,20 +88,4 @@ public class CReporte {
     public void lisrAirportsByName(String name) {
         buildReport("rptAirportParams.jasper", new ArrayList<>(Arrays.asList(name)));
     }
-
-    /*public void Listatrabajadores() {
-        ReporteTodo("listatrabajadores.jasper");
-    }
-    
-    public void ReporteHorario(int idtrabajador) {
-        ReporteCon1Parametro("reportehorario.jasper", idtrabajador + "");
-    }
-
-    public void ReporteAsistencia(int idtrabajador) {
-        ReporteCon1Parametro("reporteasistencia.jasper", idtrabajador + "");
-    }
-
-    public void ReporteMarcaciones(int idtrabajador, String desde, String hasta) {
-        ReporteCon3Parametro("reportemarcaciones.jasper", idtrabajador + "", desde, hasta);
-    }*/
 }
