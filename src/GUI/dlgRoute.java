@@ -57,6 +57,7 @@ public class dlgRoute extends javax.swing.JDialog {
         btnRemove = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setLocation(new java.awt.Point(300, 200));
 
         jLabel1.setText("Id:");
 
@@ -138,6 +139,7 @@ public class dlgRoute extends javax.swing.JDialog {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
