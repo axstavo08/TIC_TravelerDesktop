@@ -72,7 +72,7 @@ public class AirportDaoImpl implements AirportDao {
     public Boolean save(Airport airport) {
         Boolean save = Boolean.FALSE;
         StringBuilder sql = new StringBuilder();
-        sql.append("INSERT INTO aeropuerto(nombre, ubicacion, aforo, cantpistas VALUES ('")
+        sql.append("INSERT INTO aeropuerto(nombre, ubicacion, aforo, cantpistas) VALUES ('")
                 .append(airport.getName()).append("','")
                 .append(airport.getLocation()).append("',")
                 .append(airport.getCapacity()).append(",")
