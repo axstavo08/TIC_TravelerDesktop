@@ -205,7 +205,7 @@ public class dlgAirport extends javax.swing.JDialog {
         }
     }//GEN-LAST:event_btnRemoveActionPerformed
 
-    public void validateCloseWindow(int n) {
+    private void validateCloseWindow(int n) {
         if (n == 0) {
             dispose();
         }
