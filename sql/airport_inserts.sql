@@ -21,6 +21,7 @@ CREATE TABLE IF NOT EXISTS `vueloprogramado` (
 INSERT INTO `vueloprogramado` (`idvuelo`, `numero`, `idaerolinea`, `fecha`, `hora`, `idruta`, `precio`, `estado`) VALUES
 (1, '123', 2, '2014-10-10', '12:12', 1, '700.50', 1),
 (2, '1020', 3, '2014-11-11', '10:10', 2, '900.80', 1);
+(3, '1310', 2, '2015-11-11', '09:10', 1, '1000.80', 1);
 
 SELECT * FROM aeropuerto;
 SELECT * FROM ruta;
