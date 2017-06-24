@@ -3,7 +3,7 @@
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
-	<queryString>
+	<queryString language="SQL">
 		<![CDATA[SELECT v.idvuelo AS ID, 
 	a.nombre AS AEROPUERTO, 
 	v.numero AS PASAJEROS, 
@@ -108,7 +108,7 @@ GROUP BY r.origen, r.destino;]]>
 		</band>
 	</columnHeader>
 	<detail>
-		<band height="20">
+		<band height="303">
 			<line>
 				<reportElement positionType="FixRelativeToBottom" x="0" y="19" width="555" height="1" uuid="db6cd735-8a90-4851-b8c2-a47249613d52"/>
 			</line>
@@ -154,13 +154,38 @@ GROUP BY r.origen, r.destino;]]>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{CANTIDAD}]]></textFieldExpression>
 			</textField>
+			<barChart>
+				<chart>
+					<reportElement x="54" y="35" width="419" height="247" uuid="352a5da0-3906-46e9-8a04-eec302ee725b"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<categorySeries>
+						<seriesExpression><![CDATA[""]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{ORIGEN}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{ID}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<barPlot>
+					<plot/>
+					<itemLabel/>
+					<categoryAxisFormat>
+						<axisFormat/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat/>
+					</valueAxisFormat>
+				</barPlot>
+			</barChart>
 		</band>
 	</detail>
 	<columnFooter>
 		<band/>
 	</columnFooter>
 	<pageFooter>
-		<band height="17">
+		<band height="27">
 			<textField>
 				<reportElement mode="Opaque" x="0" y="4" width="515" height="13" backcolor="#E6E6E6" uuid="63fb92a7-a643-4a00-80d4-6c1598eec258"/>
 				<textElement textAlignment="Right"/>
