@@ -53,6 +53,7 @@ public class MainMDI extends javax.swing.JFrame {
         mnuReports = new javax.swing.JMenu();
         mnusRoute = new javax.swing.JMenu();
         mnuiRouteAll = new javax.swing.JMenuItem();
+        mnuiRouteOrigin = new javax.swing.JMenuItem();
         mnusAiport = new javax.swing.JMenu();
         mnuAirportAll = new javax.swing.JMenuItem();
         mnuAirportName = new javax.swing.JMenuItem();
@@ -162,6 +163,14 @@ public class MainMDI extends javax.swing.JFrame {
         });
         mnusRoute.add(mnuiRouteAll);
 
+        mnuiRouteOrigin.setText("Lista por Origen");
+        mnuiRouteOrigin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuiRouteOriginActionPerformed(evt);
+            }
+        });
+        mnusRoute.add(mnuiRouteOrigin);
+
         mnuReports.add(mnusRoute);
 
         mnusAiport.setText("Aeropuerto");
@@ -234,7 +243,7 @@ public class MainMDI extends javax.swing.JFrame {
     }//GEN-LAST:event_mnuAirportMantActionPerformed
 
     private void mnuiRouteAllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuiRouteAllActionPerformed
-        
+
         //new CReporte().listRoutes(); 
         new CReporte().listRoutes();
     }//GEN-LAST:event_mnuiRouteAllActionPerformed
@@ -250,6 +259,10 @@ public class MainMDI extends javax.swing.JFrame {
     private void mnuFlightAllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuFlightAllActionPerformed
         new CReporte().listFlights();
     }//GEN-LAST:event_mnuFlightAllActionPerformed
+
+    private void mnuiRouteOriginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuiRouteOriginActionPerformed
+        new dlgRoutesByOrigin(new javax.swing.JFrame(), true).setVisible(true);
+    }//GEN-LAST:event_mnuiRouteOriginActionPerformed
 
     /**
      * @param args the command line arguments
@@ -306,6 +319,7 @@ public class MainMDI extends javax.swing.JFrame {
     private javax.swing.JMenu mnuReports;
     private javax.swing.JMenuItem mnuRouteMant;
     private javax.swing.JMenuItem mnuiRouteAll;
+    private javax.swing.JMenuItem mnuiRouteOrigin;
     private javax.swing.JMenu mnusAiport;
     private javax.swing.JMenu mnusFlight;
     private javax.swing.JMenu mnusRoute;
