@@ -18,6 +18,9 @@ public class MainMDI extends javax.swing.JFrame {
      */
     public MainMDI() {
         initComponents();
+        fileMenu.setVisible(Boolean.FALSE);
+        editMenu.setVisible(Boolean.FALSE);
+        helpMenu.setVisible(Boolean.FALSE);
     }
 
     /**
@@ -44,12 +47,28 @@ public class MainMDI extends javax.swing.JFrame {
         helpMenu = new javax.swing.JMenu();
         contentMenuItem = new javax.swing.JMenuItem();
         aboutMenuItem = new javax.swing.JMenuItem();
-        jMenu1 = new javax.swing.JMenu();
-        mnuRoute = new javax.swing.JMenuItem();
-        mnuAirport = new javax.swing.JMenuItem();
-        jMenuItem1 = new javax.swing.JMenuItem();
+        mnuMaintenance = new javax.swing.JMenu();
+        mnuRouteMant = new javax.swing.JMenuItem();
+        mnuAirportMant = new javax.swing.JMenuItem();
+        mnuReports = new javax.swing.JMenu();
+        mnusRoute = new javax.swing.JMenu();
+        mnuiRouteAll = new javax.swing.JMenuItem();
+        mnuiRouteOrigin = new javax.swing.JMenuItem();
+        mnusAiport = new javax.swing.JMenu();
+        mnuAirportAll = new javax.swing.JMenuItem();
+        mnuAirportName = new javax.swing.JMenuItem();
+        mnusFlight = new javax.swing.JMenu();
+        mnuFlightAll = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Aplicación Viajero");
+        setBackground(new java.awt.Color(0, 102, 102));
+        setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
+
+        desktopPane.setToolTipText("");
+        desktopPane.setName(""); // NOI18N
+
+        menuBar.setToolTipText("Aplicacion Viajero");
 
         fileMenu.setMnemonic('f');
         fileMenu.setText("File");
@@ -112,33 +131,81 @@ public class MainMDI extends javax.swing.JFrame {
 
         menuBar.add(helpMenu);
 
-        jMenu1.setText("Mantenimiento");
+        mnuMaintenance.setText("Mantenimiento");
 
-        mnuRoute.setText("Ruta");
-        mnuRoute.addActionListener(new java.awt.event.ActionListener() {
+        mnuRouteMant.setText("Ruta");
+        mnuRouteMant.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mnuRouteActionPerformed(evt);
+                mnuRouteMantActionPerformed(evt);
             }
         });
-        jMenu1.add(mnuRoute);
+        mnuMaintenance.add(mnuRouteMant);
 
-        mnuAirport.setText("Aeropuerto");
-        mnuAirport.addActionListener(new java.awt.event.ActionListener() {
+        mnuAirportMant.setText("Aeropuerto");
+        mnuAirportMant.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mnuAirportActionPerformed(evt);
+                mnuAirportMantActionPerformed(evt);
             }
         });
-        jMenu1.add(mnuAirport);
+        mnuMaintenance.add(mnuAirportMant);
 
-        jMenuItem1.setText("Reporte Ruta");
-        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+        menuBar.add(mnuMaintenance);
+
+        mnuReports.setText("Reportes");
+
+        mnusRoute.setText("Ruta");
+
+        mnuiRouteAll.setText("Lista Completa");
+        mnuiRouteAll.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem1ActionPerformed(evt);
+                mnuiRouteAllActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem1);
+        mnusRoute.add(mnuiRouteAll);
 
-        menuBar.add(jMenu1);
+        mnuiRouteOrigin.setText("Lista por Origen");
+        mnuiRouteOrigin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuiRouteOriginActionPerformed(evt);
+            }
+        });
+        mnusRoute.add(mnuiRouteOrigin);
+
+        mnuReports.add(mnusRoute);
+
+        mnusAiport.setText("Aeropuerto");
+
+        mnuAirportAll.setText("Lista Completa");
+        mnuAirportAll.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuAirportAllActionPerformed(evt);
+            }
+        });
+        mnusAiport.add(mnuAirportAll);
+
+        mnuAirportName.setText("Lista por Nombre");
+        mnuAirportName.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuAirportNameActionPerformed(evt);
+            }
+        });
+        mnusAiport.add(mnuAirportName);
+
+        mnuReports.add(mnusAiport);
+
+        mnusFlight.setText("Vuelos");
+
+        mnuFlightAll.setText("Lista Completa");
+        mnuFlightAll.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuFlightAllActionPerformed(evt);
+            }
+        });
+        mnusFlight.add(mnuFlightAll);
+
+        mnuReports.add(mnusFlight);
+
+        menuBar.add(mnuReports);
 
         setJMenuBar(menuBar);
 
@@ -146,36 +213,56 @@ public class MainMDI extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(desktopPane, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+            .addComponent(desktopPane, javax.swing.GroupLayout.DEFAULT_SIZE, 700, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(desktopPane, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
+            .addComponent(desktopPane, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
         );
 
+        desktopPane.getAccessibleContext().setAccessibleName("");
+
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void exitMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitMenuItemActionPerformed
         System.exit(0);
     }//GEN-LAST:event_exitMenuItemActionPerformed
 
-    private void mnuRouteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuRouteActionPerformed
+    private void mnuRouteMantActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuRouteMantActionPerformed
         frmListRoutes frm = new frmListRoutes();
         desktopPane.add(frm);
         frm.show();
-    }//GEN-LAST:event_mnuRouteActionPerformed
+    }//GEN-LAST:event_mnuRouteMantActionPerformed
 
-    private void mnuAirportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuAirportActionPerformed
+    private void mnuAirportMantActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuAirportMantActionPerformed
         frmListAirports frm = new frmListAirports();
         desktopPane.add(frm);
         frm.show();
-    }//GEN-LAST:event_mnuAirportActionPerformed
+    }//GEN-LAST:event_mnuAirportMantActionPerformed
 
-    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        
-        new CReporte().ListRoutes();
-    }//GEN-LAST:event_jMenuItem1ActionPerformed
+    private void mnuiRouteAllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuiRouteAllActionPerformed
+
+        //new CReporte().listRoutes(); 
+        new CReporte().listRoutes();
+    }//GEN-LAST:event_mnuiRouteAllActionPerformed
+
+    private void mnuAirportAllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuAirportAllActionPerformed
+        new CReporte().listAirports();
+    }//GEN-LAST:event_mnuAirportAllActionPerformed
+
+    private void mnuAirportNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuAirportNameActionPerformed
+        new dlgAirportPName(new javax.swing.JFrame(), true).setVisible(true);
+    }//GEN-LAST:event_mnuAirportNameActionPerformed
+
+    private void mnuFlightAllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuFlightAllActionPerformed
+        new CReporte().listFlights();
+    }//GEN-LAST:event_mnuFlightAllActionPerformed
+
+    private void mnuiRouteOriginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuiRouteOriginActionPerformed
+        new dlgRoutesByOrigin(new javax.swing.JFrame(), true).setVisible(true);
+    }//GEN-LAST:event_mnuiRouteOriginActionPerformed
 
     /**
      * @param args the command line arguments
@@ -223,11 +310,19 @@ public class MainMDI extends javax.swing.JFrame {
     private javax.swing.JMenuItem exitMenuItem;
     private javax.swing.JMenu fileMenu;
     private javax.swing.JMenu helpMenu;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuBar menuBar;
-    private javax.swing.JMenuItem mnuAirport;
-    private javax.swing.JMenuItem mnuRoute;
+    private javax.swing.JMenuItem mnuAirportAll;
+    private javax.swing.JMenuItem mnuAirportMant;
+    private javax.swing.JMenuItem mnuAirportName;
+    private javax.swing.JMenuItem mnuFlightAll;
+    private javax.swing.JMenu mnuMaintenance;
+    private javax.swing.JMenu mnuReports;
+    private javax.swing.JMenuItem mnuRouteMant;
+    private javax.swing.JMenuItem mnuiRouteAll;
+    private javax.swing.JMenuItem mnuiRouteOrigin;
+    private javax.swing.JMenu mnusAiport;
+    private javax.swing.JMenu mnusFlight;
+    private javax.swing.JMenu mnusRoute;
     private javax.swing.JMenuItem openMenuItem;
     private javax.swing.JMenuItem pasteMenuItem;
     private javax.swing.JMenuItem saveAsMenuItem;
