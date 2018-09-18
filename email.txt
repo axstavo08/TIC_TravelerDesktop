@@ -1,0 +1,187 @@
+﻿<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40"><head><meta http-equiv=Content-Type content="text/html; charset=utf-8"><meta name=Generator content="Microsoft Word 14 (filtered medium)"><!--[if !mso]><style>v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style><![endif]--><title>Facebook</title><style><!--
+/* Font Definitions */
+@font-face
+	{font-family:Helvetica;
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Helvetica;
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+h1
+	{mso-style-priority:9;
+	mso-style-link:"Título 1 Car";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	font-size:24.0pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+h2
+	{mso-style-priority:9;
+	mso-style-link:"Título 2 Car";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	font-size:18.0pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+h3
+	{mso-style-priority:9;
+	mso-style-link:"Título 3 Car";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+h4
+	{mso-style-priority:9;
+	mso-style-link:"Título 4 Car";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+h5
+	{mso-style-priority:9;
+	mso-style-link:"Título 5 Car";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+h6
+	{mso-style-priority:9;
+	mso-style-link:"Título 6 Car";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	font-size:7.5pt;
+	font-family:"Times New Roman","serif";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;}
+p
+	{mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+span.Ttulo1Car
+	{mso-style-name:"Título 1 Car";
+	mso-style-priority:9;
+	mso-style-link:"Título 1";
+	font-family:"Cambria","serif";
+	color:#365F91;
+	font-weight:bold;}
+span.Ttulo2Car
+	{mso-style-name:"Título 2 Car";
+	mso-style-priority:9;
+	mso-style-link:"Título 2";
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	font-weight:bold;}
+span.Ttulo3Car
+	{mso-style-name:"Título 3 Car";
+	mso-style-priority:9;
+	mso-style-link:"Título 3";
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	font-weight:bold;}
+span.Ttulo4Car
+	{mso-style-name:"Título 4 Car";
+	mso-style-priority:9;
+	mso-style-link:"Título 4";
+	font-family:"Cambria","serif";
+	color:#4F81BD;
+	font-weight:bold;
+	font-style:italic;}
+span.Ttulo5Car
+	{mso-style-name:"Título 5 Car";
+	mso-style-priority:9;
+	mso-style-link:"Título 5";
+	font-family:"Cambria","serif";
+	color:#243F60;}
+span.Ttulo6Car
+	{mso-style-name:"Título 6 Car";
+	mso-style-priority:9;
+	mso-style-link:"Título 6";
+	font-family:"Cambria","serif";
+	color:#243F60;
+	font-style:italic;}
+p.dmbshow, li.dmbshow, div.dmbshow
+	{mso-style-name:d_mb_show;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	display:none;}
+p.dmbshowcenter, li.dmbshowcenter, div.dmbshowcenter
+	{mso-style-name:d_mb_show_center;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";}
+span.mbtext
+	{mso-style-name:mb_text;}
+span.EstiloCorreo28
+	{mso-style-type:personal-reply;
+	font-family:"Calibri","sans-serif";
+	color:#1F497D;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-size:10.0pt;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:70.85pt 3.0cm 70.85pt 3.0cm;}
+div.WordSection1
+	{page:WordSection1;}
+/* List Definitions */
+@list l0
+	{mso-list-id:687954163;
+	mso-list-template-ids:1272223480;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext="edit" spidmax="1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext="edit">
+<o:idmap v:ext="edit" data="1" />
+</o:shapelayout></xml><![endif]--></head><body bgcolor=white lang=ES-PE link=blue vlink=purple><div class=WordSection1><p class=MsoNormal><span style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:#1F497D'><o:p>&nbsp;</o:p></span></p><p class=MsoNormal><span style='font-size:11.0pt;font-family:"Calibri","sans-serif";color:#1F497D'><o:p>&nbsp;</o:p></span></p><div><div style='border:none;border-top:solid #B5C4DF 1.0pt;padding:3.0pt 0cm 0cm 0cm'><p class=MsoNormal><b><span lang=ES style='font-size:10.0pt;font-family:"Tahoma","sans-serif"'>De:</span></b><span lang=ES style='font-size:10.0pt;font-family:"Tahoma","sans-serif"'> Facebook [mailto:partner-portal@support.facebook.com] <br><b>Enviado el:</b> martes 18 de septiembre de 2018 03:02 PM<br><b>Para:</b> Carlos Gualberto Sanchez Alvitez<br><b>Asunto:</b> You've Been Granted Access to the Facebook Actionable Insights Portal<o:p></o:p></span></p></div></div><p class=MsoNormal><o:p>&nbsp;</o:p></p><div align=center><table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse'><tr><td style='background:white;padding:0cm 0cm 0cm 0cm'><table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width="100%" style='width:100.0%;border-collapse:collapse'><tr style='height:15.0pt'><td colspan=3 style='padding:0cm 0cm 0cm 0cm;height:15.0pt'><p class=MsoNormal style='line-height:15.0pt'>&nbsp;<o:p></o:p></p></td></tr><tr style='height:.75pt'><td colspan=3 style='padding:0cm 0cm 0cm 0cm;height:.75pt'></td></tr><tr><td width=15 style='width:11.25pt;padding:0cm 0cm 0cm 0cm'><p class=MsoNormal>&nbsp;&nbsp;&nbsp;<o:p></o:p></p></td><td style='padding:0cm 0cm 0cm 0cm'><table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width="100%" style='width:100.0%;border-collapse:collapse'><tr style='height:12.0pt'><td colspan=3 style='padding:0cm 0cm 0cm 0cm;height:12.0pt'><p class=MsoNormal style='line-height:12.0pt'>&nbsp;<o:p></o:p></p></td></tr><tr style='height:24.0pt'><td width=32 style='width:24.0pt;padding:0cm 0cm 0cm 0cm;height:24.0pt'><p class=MsoNormal style='mso-line-height-alt:0pt'><a href="https://partners.facebook.com/invitation/?invitation=2237101976304799&amp;nonce=E5EoFhntkh5w"><span style='color:#3B5998;text-decoration:none'><img border=0 width=32 height=32 id="_x0000_i1025" src="https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/vd4aB0GIe9z.png"></span></a><o:p></o:p></p></td><td width=15 style='width:11.25pt;padding:0cm 0cm 0cm 0cm;height:24.0pt'><p class=MsoNormal>&nbsp;&nbsp;&nbsp;<o:p></o:p></p></td><td width="100%" style='width:100.0%;padding:0cm 0cm 0cm 0cm;height:24.0pt'><p class=MsoNormal><a href="https://partners.facebook.com/invitation/?invitation=2237101976304799&amp;nonce=E5EoFhntkh5w"><span style='font-size:14.5pt;font-family:"Helvetica","sans-serif";color:#3B5998;text-decoration:none'>Actionable Insights</span></a><o:p></o:p></p></td></tr><tr style='height:12.0pt'><td colspan=3 style='padding:0cm 0cm 0cm 0cm;height:12.0pt'><p class=MsoNormal style='line-height:12.0pt'>&nbsp;<o:p></o:p></p></td></tr></table></td><td width=15 style='width:11.25pt;padding:0cm 0cm 0cm 0cm'><p class=MsoNormal>&nbsp;&nbsp;&nbsp;<o:p></o:p></p></td></tr><tr><td width=15 style='width:11.25pt;padding:0cm 0cm 0cm 0cm'><p class=MsoNormal>&nbsp;&nbsp;&nbsp;<o:p></o:p></p></td><td style='padding:0cm 0cm 0cm 0cm'><table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width="100%" style='width:100.0%;border-collapse:collapse'><tr style='height:21.0pt'><td style='padding:0cm 0cm 0cm 0cm;height:21.0pt'><p class=MsoNormal style='line-height:21.0pt'>&nbsp;<o:p></o:p></p></td></tr><tr><td style='padding:0cm 0cm 0cm 0cm'><p class=MsoNormal><strong><span style='font-family:"Helvetica","sans-serif";color:#141823'>You've been given access to the Facebook Actionable Insights Portal for Claro by Marielena Puerta</span></strong><o:p></o:p></p></td></tr><tr style='height:10.5pt'><td style='padding:0cm 0cm 0cm 0cm;height:10.5pt'><p class=MsoNormal style='mso-line-height-alt:10.5pt'>&nbsp;<o:p></o:p></p></td></tr><tr><td style='padding:0cm 0cm 0cm 0cm'><p class=MsoNormal><span class=mbtext><span style='font-family:"Helvetica","sans-serif";color:#141823'>To access, you will need to use your personal Facebook account. None of your personal Facebook activity or information will be shared with your company.</span></span><o:p></o:p></p></td></tr><tr style='height:10.5pt'><td style='padding:0cm 0cm 0cm 0cm;height:10.5pt'><p class=MsoNormal style='mso-line-height-alt:10.5pt'>&nbsp;<o:p></o:p></p></td></tr><tr><td style='padding:0cm 0cm 0cm 0cm'><ol start=1 type=1><li class=MsoNormal style='color:#141823;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;line-height:15.75pt;mso-list:l0 level1 lfo1'><span style='font-family:"Helvetica","sans-serif"'>Login to Facebook using the email or phone number that you used to create your Facebook account. If you do not have a Facebook account click here to create one: <a href="https://www.facebook.com/"><span style='color:#3B5998;text-decoration:none'>https://www.facebook.com</span></a>.<o:p></o:p></span></li><li class=MsoNormal style='color:#141823;mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;line-height:15.75pt;mso-list:l0 level1 lfo1'><span style='font-family:"Helvetica","sans-serif"'>Once you are logged into your Facebook account, <a href="https://partners.facebook.com/invitation/?invitation=2237101976304799&amp;nonce=E5EoFhntkh5w"><span style='color:#3B5998;text-decoration:none'>click here to access the Actionable Insights Portal</span></a>.<o:p></o:p></span></li></ol></td></tr><tr style='height:10.5pt'><td style='padding:0cm 0cm 0cm 0cm;height:10.5pt'><p class=MsoNormal style='mso-line-height-alt:10.5pt'>&nbsp;<o:p></o:p></p></td></tr></table></td><td width=15 style='width:11.25pt;padding:0cm 0cm 0cm 0cm'><p class=MsoNormal>&nbsp;&nbsp;&nbsp;<o:p></o:p></p></td></tr><tr><td width=15 style='width:11.25pt;padding:0cm 0cm 0cm 0cm'><p class=MsoNormal>&nbsp;&nbsp;&nbsp;<o:p></o:p></p></td><td style='padding:0cm 0cm 0cm 0cm'><table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 align=left width="100%" style='width:100.0%;border-collapse:collapse'><tr style='height:12.0pt'><td style='padding:0cm 0cm 0cm 0cm;height:12.0pt'><p class=MsoNormal style='line-height:12.0pt'>&nbsp;<o:p></o:p></p></td></tr><tr><td style='padding:0cm 0cm 0cm 0cm'><p class=MsoNormal style='line-height:12.0pt'><span style='font-size:8.5pt;font-family:"Helvetica","sans-serif";color:#AAAAAA'>This message was sent to <a href="mailto:c24885@claro.com.pe"><span style='color:#3B5998;text-decoration:none'>c24885@claro.com.pe</span></a> at your request.<br>Facebook, Inc., Attention: Community Support, 1 Facebook Way, Menlo Park, CA 94025<o:p></o:p></span></p></td></tr></table></td><td width=15 style='width:11.25pt;padding:0cm 0cm 0cm 0cm'><p class=MsoNormal>&nbsp;&nbsp;&nbsp;<o:p></o:p></p></td></tr><tr style='height:15.0pt'><td colspan=3 style='padding:0cm 0cm 0cm 0cm;height:15.0pt'><p class=MsoNormal style='line-height:15.0pt'>&nbsp;<o:p></o:p></p></td></tr></table><p class=MsoNormal><span style='font-family:"Helvetica","sans-serif"'><img border=0 id="_x0000_i1026" src="https://www.facebook.com/email_open_log_pic.php?mid=HMTUzNzI5OTY2MDQ5NDY3NjpjMjQ4ODVAY2xhcm8uY29tLnBlOjY2NQ"><o:p></o:p></span></p></td></tr></table></div><p class=MsoNormal><o:p>&nbsp;</o:p></p></div></body></html>
